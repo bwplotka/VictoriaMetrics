@@ -1,0 +1,8 @@
+{
+  "data": "measurement,tag1=value1,tag2=value2 field1=123,field2=1.23",
+  "query": "/api/v1/export?match={__name__!=\"\"}",
+  "result": [
+    {"metric":{"__name__":"\"measurement.field2","tag1":"value1","tag2":"value2"},"values":[0]},
+    {"metric":{"__name__":"\"measurement.field1","tag1":"value1","tag2":"value2"},"values":[123]}
+  ]
+}
